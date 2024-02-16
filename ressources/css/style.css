@@ -1,0 +1,318 @@
+:root {
+	--main-bg-color: #202124;
+	--main-color: #fff;
+	--search-bar-width: 200px;
+	--button-bg-color: #303134;
+	--button-bg-color-hover: #3c4043;
+	--button-bg-color-wrong: #e53523;
+	--button-bg-color-correct: #6ea407;
+}
+
+body {
+	/*background-color: #e8e1e1;*/
+	background-color: var(--main-bg-color);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	/*color: #d1b8b8;*/
+	color: var(--main-color);
+}
+
+.button:active {
+	box-shadow: #422800 2px 2px 0 0;
+	transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+	.button {
+		min-width: 120px;
+		padding: 0 25px;
+	}
+}
+#DigGrid{
+	text-align: center;
+}
+#DigicodeGrid,.Confirm{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#questionPage h1, #questionPage h2{
+	text-align: center;
+}
+/*
+#questionPage img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	height: 250px;
+	border-radius: 2.5%;
+}
+*/
+#questionPage section{
+	margin: 50px auto 0px auto;
+	display: grid;
+	grid-template-columns: auto auto;
+	height: 250px;
+	width: 1000px;
+}
+
+#questionPage input[type=button]{
+	width: 500px;
+}
+
+#questionButton, #welcomeButton{
+	
+	background-color: var(--button-bg-color);
+	border: none;
+}
+
+#questionButton:hover, #welcomeButton:hover{
+	background-color: var(--button-bg-color-hover);
+}
+
+#welcomeButtonCorrect{
+	background-color: var(--button-bg-color-correct);
+	border: none;
+}
+
+#welcomeButtonWrong{
+	background-color: var(--button-bg-color-wrong);
+	border: none;
+}
+
+#accueil h1 a{
+	text-decoration: none;
+	color: #835b5b;
+}
+
+a:visited, a{
+	color: var(--main-color);
+}
+
+h1{
+	text-align: center;
+}
+
+#picture section{
+	text-align: center;
+	width: 977px;
+	height: 550px;
+	margin: 0 auto;
+}
+
+#picture img{
+	height: 550px;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: 1;
+}
+
+#welcome header{
+	display: grid;
+	grid-template-columns: auto;
+}
+
+#countryInfoPage header{
+	display: grid;
+	grid-template-columns: none;
+}
+
+#welcome main{
+	display: grid;
+	text-align: center;
+	justify-content: space-around;
+	align-content: center;
+	height: 500px;
+}
+
+#answer{
+	text-decoration: underline;
+}
+
+button{
+	background-color: #c6c0c0;
+	height: 50px;
+	width: 300px;
+	margin: 2.5px;
+}
+
+button:hover{
+	background-color: #a99b9b;
+}
+
+header{
+	display:  grid;
+	grid-template-columns: auto auto auto;
+}
+
+header a{
+	justify-self: start;
+}
+
+header h1{
+	justify-self: center;
+}
+
+header #stats{
+	justify-self: end;
+}
+
+#stats{
+	display: grid;
+	justify-content: start;
+}
+
+.correct{
+	width: 100%;
+	border: solid 4px green;
+}
+
+.wrong{
+	width: 100%;
+	opacity: 0.2;
+	border: solid 4px red;
+}
+
+.propositionPicture, #picture{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 217px;
+	height: 160px;
+	margin-top: 50px;
+}
+
+/* This part come from mozilladeveloper */
+table {
+	border-collapse: collapse;
+	border: 2px solid rgb(140 140 140);
+	font-family: sans-serif;
+	font-size: 0.8rem;
+	letter-spacing: 1px;
+	text-align: center;
+	margin: 0 auto;
+  }
+  
+  caption {
+	caption-side: bottom;
+	padding: 10px;
+	font-weight: bold;
+  }
+  
+  thead,
+  tfoot {
+	background-color: #333438;
+  }
+  
+  th,
+  td {
+	border: 1px solid rgb(160 160 160);
+	padding: 8px 10px;
+  }
+  
+  td:last-of-type {
+	text-align: center;
+  }
+  
+  tbody > tr:nth-of-type(even) {
+	background-color: #2b2c2f;
+  }
+  
+  tfoot th {
+	text-align: right;
+  }
+  
+  tfoot td {
+	font-weight: bold;
+  }
+  
+/* End part of mozilladeveloper */
+
+#revisionFlag{
+	width: 200px;
+}
+
+#searchResultSelection{
+	/*background-color: #a99b9b;*/
+	color: #bdc1c6;
+	background-color: #303134;
+	list-style-type: none;
+	text-align: center;
+	width: var(--search-bar-width);
+	/*border: solid 1px #7c7474;*/
+}
+
+#searchResultSelection:hover{
+	/*background-color: #8d8585;*/
+	background-color: #3c4043;
+	cursor: default;
+}
+
+#searchResultSelection:last-child{
+	border-radius: 0 0 60px 60px;
+}
+
+#wiki img{
+	width: 150px;
+}
+
+#underline{
+	text-decoration: underline;
+}
+
+#searchBar{
+	/*border-radius: 60px 60px 0 0;*/
+	/*border-radius: 60px;*/
+	border: none;
+	/*background-color: #303134;*/
+	background-color: transparent;
+	color: var(--main-color);
+	caret-color: var(--main-color);
+	padding-left: 10px;
+}
+
+#searchBar:focus{
+	outline: none;
+}
+
+#searchBarLi{
+	display: grid;
+	grid-template-columns: auto auto;
+	width: var(--search-bar-width);
+	background-color: #303134;
+	border-radius: 25px;
+}
+
+#searchBarLi input[type=button]{
+	width: 22px;
+	background-color: transparent;
+	border: none;
+	background-image: url('../../userContent/pictures/magnifying_glass.png');
+	background-size: 15px;
+	background-repeat: no-repeat;
+}
+
+#searchBarLi input[type=button]:hover{
+	cursor: pointer;
+}
+
+.linkButton{
+	width: 0;
+}
+
+#footer{
+	text-align: center;
+}
+
+#countryInfoPage{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#countryInfoPage main{
+	height: 39em;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="ressources/css/style.css">
+    <link rel="icon" type="image/ico" href="ressources/pictures/globe.png"/>
+    <script src="./src/js/link.js"></script>
+</head>
+<body id="welcome">
+    <header>
+        <h1 id="questionTitle">
+            GeoQuizz
+        </h1>
+    </header>
+    <main>
+        <input id="welcomeButton" type="button" value="Capitale du monde" onclick="LaunchLink('./src/html/mondialCapital.html')">
+        <input id="welcomeButton" type="button" value="Pays du monde (à partir du drapeau)" onclick="LaunchLink('./src/html/mondialFlagCountry.html')">
+        <input id="welcomeButton" type="button" value="Pays du monde (à partir de la capitale)" onclick="LaunchLink('./src/html/mondialCountryCapital.html')">
+        <input id="welcomeButton" type="button" value="Monnaies du monde" onclick="LaunchLink('./src/html/mondialCurrency.html')">
+        <input id="welcomeButton" type="button" value="Drapeaux du monde (à partir du pays)" onclick="LaunchLink('./src/html/mondialCountryFlag.html')">
+        <input id="welcomeButton" type="button" value="Révision" onclick="LaunchLink('./src/html/revision.html')">
+    </main>
+    <footer>
+        <a href="src/html/credits.html">
+            <h4>
+                Crédits
+            </h4>
+        </a>
+    </footer>
+</body>
+</html>

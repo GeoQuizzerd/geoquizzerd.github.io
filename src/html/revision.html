@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Capitales</title>
+    <link rel="stylesheet" href="./../../ressources/css/style.css">
+    <link rel="icon" type="image/ico" href="../../ressources/pictures/globe.png"/>
+    <script type="text/javascript" src="../js/countries.js"></script>
+    <script src="../js/quiz.js"></script>
+    <script src="../js/revision.js"></script>
+</head>
+<body onload="Init('revision')">
+    <header id="header">
+        <a href="../../index.html">
+            Accueil
+        </a>
+    </header>
+    <main id="main">
+        <h1>
+            Révision
+        </h1>
+        <section>
+            <ul id="searchPart">
+                <li id="searchBarLi">
+                    <input id="searchBar" type="text" placeholder="Search Bar" onkeypress="Search(event)" oninput="Proposition()">
+                    <input type="button" onclick="Search()">
+                </li>
+            </ul>
+            <table id="revisionTable">
+                <thead>
+                    <th>
+                        Flag
+                    </th>
+                    <th>
+                        Country
+                    </th>
+                    <th>
+                        Capital
+                    </th>
+                </thead>
+                <tbody id="revisionTableBody">
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

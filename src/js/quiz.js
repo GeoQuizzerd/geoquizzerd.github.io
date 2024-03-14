@@ -2,6 +2,16 @@ let score = 0;
 let error = 0;
 let normalColor = getComputedStyle(document.documentElement).getPropertyValue('--button-bg-color');
 
+let validCountryCode3;
+let InputMapFlag;
+let randomCountry = null;
+const GetInputMapFlag = () =>{
+    InputMapFlag = document.getElementById('InputMapFlag');
+    console.log(InputMapFlag.value);
+}
+GetInputMapFlag();
+console.log(InputMapFlag);
+
 function Init(mode){
     let header = document.getElementById('header');
     let main = document.getElementById('main');
@@ -146,6 +156,26 @@ function Init(mode){
                   }
             }
             break;
+        case 'mapFlag':
+            //h1.id = 'questionTitle';
+            img.id = "picture2";
+
+            //input = document.createElement("input");
+            //input.value = "Confirmer";
+            //input.id = "InputMapFlag";
+            //input.setAttribute('type', 'button');
+
+            //input.setAttribute('onclick', `CheckCountryMap()`);
+
+            //header.insertBefore(h1, stats);
+            header.insertBefore(img, document.getElementById('stats2'));
+            //section.insertBefore(input, null);
+
+            document.getElementById('score').innerHTML = score;
+            document.getElementById('error').innerHTML = error;
+
+            StartingGame(mode);
+            break;
     }
 }   
 
@@ -157,7 +187,7 @@ function StartingGame(mode){
 
     let coutriesNames = [];
         
-    let randomCountry = Math.floor(Math.random() * Countries.length);
+    randomCountry = Math.floor(Math.random() * Countries.length);
 
     switch(mode){
         case "capital":  
@@ -345,6 +375,16 @@ function StartingGame(mode){
                 }
             }
             //console.log(coutriesNames);
+            break;
+        case "mapFlag":
+            //title.innerHTML = "Localiser le pays par son drapeau";
+            picture = document.getElementById('picture2');
+            picture.src = `../../userContent/pictures/countries/${(Countries[randomCountry].code).toLowerCase()}.svg`;
+            document.querySelector("link[rel*='icon']").href = `../../userContent/pictures/countries/${Countries[randomCountry].code.toLowerCase()}.svg`;
+
+            correctCountry = Countries[randomCountry].name;
+                    
+            validCountryCode3 = Countries[randomCountry].alpha_3;
             break;
     }
 }

@@ -60,13 +60,13 @@ body {
 	width: 500px;
 }
 
-#questionButton, #welcomeButton{
+#questionButton, .welcomeButton{
 	
 	background-color: var(--button-bg-color);
 	border: none;
 }
 
-#questionButton:hover, #welcomeButton:hover{
+#questionButton:hover, .welcomeButton:hover{
 	background-color: var(--button-bg-color-hover);
 }
 
@@ -156,13 +156,17 @@ header h1{
 	justify-self: center;
 }
 
-header #stats{
+header #stats, header #stats2{
 	justify-self: end;
 }
 
-#stats{
+#stats, #stats2{
 	display: grid;
 	justify-content: start;
+}
+
+#stats2{
+	align-content: baseline;
 }
 
 .correct{
@@ -183,6 +187,15 @@ header #stats{
 	width: 217px;
 	height: 160px;
 	margin-top: 50px;
+}
+
+#picture2{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	margin-top: 5px;
+	margin-bottom: 15px;
 }
 
 /* This part come from mozilladeveloper */
@@ -315,4 +328,13 @@ table {
 
 #countryInfoPage main{
 	height: 39em;
+}
+
+#map {
+	/* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+	height: 500px;
+	width: 75%;
+	margin: auto;
+	/*background-color: rgb(38, 38, 38);*/
+	background-color: var(--button-bg-color);
 }

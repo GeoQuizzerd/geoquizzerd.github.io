@@ -16,10 +16,6 @@ body {
 	color: var(--main-color);
 }
 
-input{
-	color: var(--main-color);
-}
-
 .button:active {
 	box-shadow: #422800 2px 2px 0 0;
 	transform: translate(2px, 2px);
@@ -62,10 +58,11 @@ input{
 
 #questionPage input[type=button]{
 	width: 500px;
+	color: var(--main-color);
 }
 
 #questionButton, .welcomeButton{
-	
+	color: var(--main-color);
 	background-color: var(--button-bg-color);
 	border: none;
 }

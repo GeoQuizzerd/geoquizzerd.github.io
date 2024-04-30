@@ -67,7 +67,7 @@ body {
 	border: none;
 }
 
-#questionButton:hover, .welcomeButton:hover{
+#questionButton:hover, .welcomeButton:hover, InputMapFlag:hover{
 	background-color: var(--button-bg-color-hover);
 }
 

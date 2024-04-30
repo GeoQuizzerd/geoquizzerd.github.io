@@ -61,7 +61,7 @@ body {
 	color: var(--main-color);
 }
 
-#questionButton, .welcomeButton{
+#questionButton, .welcomeButton, #InputMapFlag{
 	color: var(--main-color);
 	background-color: var(--button-bg-color);
 	border: none;

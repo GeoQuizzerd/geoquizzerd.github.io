@@ -9,7 +9,7 @@ const GetInputMapFlag = () =>{
     InputMapFlag = document.getElementById('InputMapFlag');
     console.log(InputMapFlag.value);
 }
-GetInputMapFlag();
+// GetInputMapFlag();
 console.log(InputMapFlag);
 
 function Init(mode){
@@ -126,8 +126,11 @@ function Init(mode){
             let tbody = document.getElementById('revisionTableBody');
             for (country of Countries){
                 let tr = document.createElement('tr');
+                let a1 = document.createElement('a');
                 let a = document.createElement('a');
+                a1.href =  `#${country.name}`;
                 a.href =  `./country.html?country=${country.name}`;
+                tr.id = country.name;
                 tbody.insertBefore(tr ,null);
                 //console.log(country);
                 for (const [key, value] of Object.entries(country)) {
@@ -137,7 +140,8 @@ function Init(mode){
                             let img = document.createElement('img');
                             img.src = `../../userContent/pictures/countries/${value.toLowerCase()}.svg`;
                             img.id = "revisionFlag";
-                            tr.insertBefore(th,null);
+                            tr.insertBefore(a1,null);
+                            a1.insertBefore(th,null);
                             th.insertBefore(a,null);
                             a.insertBefore(img,null);
                             //console.log(`${key}: ${value}`);

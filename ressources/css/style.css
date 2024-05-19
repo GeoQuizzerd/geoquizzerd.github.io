@@ -58,16 +58,15 @@ body {
 
 #questionPage input[type=button]{
 	width: 500px;
-	color: var(--main-color);
 }
 
-#questionButton, .welcomeButton, #InputMapFlag{
-	color: var(--main-color);
+#questionButton, .welcomeButton{
+	
 	background-color: var(--button-bg-color);
 	border: none;
 }
 
-#questionButton:hover, .welcomeButton:hover, InputMapFlag:hover{
+#questionButton:hover, .welcomeButton:hover{
 	background-color: var(--button-bg-color-hover);
 }
 

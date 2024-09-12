@@ -1,9 +1,9 @@
 :root {
-	--main-bg-color: #202124;
+	--main-bg-color: #70A0AF;
 	--main-color: #fff;
 	--search-bar-width: 200px;
-	--button-bg-color: #303134;
-	--button-bg-color-hover: #3c4043;
+	--button-bg-color: #97A7B3;
+	--button-bg-color-hover: #8d9aa3;
 	--button-bg-color-wrong: #e53523;
 	--button-bg-color-correct: #6ea407;
 }
@@ -63,6 +63,7 @@ body {
 #questionButton, .welcomeButton{
 	
 	background-color: var(--button-bg-color);
+	color: var(--main-color);
 	border: none;
 }
 
@@ -196,6 +197,7 @@ header #stats, header #stats2{
 	width: 150px;
 	margin-top: 5px;
 	margin-bottom: 15px;
+	border: solid 1.5px black;
 }
 
 /* This part come from mozilladeveloper */

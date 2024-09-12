@@ -127,7 +127,6 @@ const Countries = [
 	{code: "NR",alpha_3: "NRU",name: "Nauru",capital: "Yaren",continent: "Oceania",continent_code: "OC",phone: 674,currency: "AUD",currency_symbol: "$"},
 	{code: "NP",alpha_3: "NPL",name: "Népal",capital: "Kathmandu",continent: "Asia",continent_code: "AS",phone: 977,currency: "NPR",currency_symbol: "₨"},
 	{code: "NL",alpha_3: "NLD",name: "Pays-Bas",capital: "Amsterdam",continent: "Europe",continent_code: "EU",phone: 31,currency: "EUR",currency_symbol: "€"},
-	{code: "AN",alpha_3: "ANT",name: "Curaçao",capital: "Willemstad",continent: "North America",continent_code: "NA",phone: 599,currency: "ANG",currency_symbol: "NAf"},
 	{code: "NZ",alpha_3: "NZL",name: "Nouvelle-Zélande",capital: "Wellington",continent: "Oceania",continent_code: "OC",phone: 64,currency: "NZD",currency_symbol: "$"},
 	{code: "NI",alpha_3: "NIC",name: "Nicaragua",capital: "Managua",continent: "North America",continent_code: "NA",phone: 505,currency: "NIO",currency_symbol: "C$"},
 	{code: "NE",alpha_3: "NER",name: "Niger",capital: "Niamey",continent: "Africa",continent_code: "AF",phone: 227,currency: "XOF",currency_symbol: "CFA"},
